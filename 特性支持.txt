@@ -1,49 +1,49 @@
-1. #include
-   ÒýÓÃÎÄ¼þ£¬Ö§³Öinclude path£¬¿ÉÍ¨¹ýinclude-paths.phpÅäÖÃ£¬Ò²¿É
-   Í¨¹ýÖ¸Áî#pragma add_include_path Ìí¼ÓÂ·¾¶£¬Í¨¹ýÖ¸ÁîÌí¼ÓµÄÂ·¾¶
-   ½ö¿É±»Ö®ºóµÄÒýÓÃ²Ù×÷ËùÊ¹ÓÃ¡£
+ï»¿1. #include
+   å¼•ç”¨æ–‡ä»¶ï¼Œæ”¯æŒinclude pathï¼Œå¯é€šè¿‡include-paths.phpé…ç½®ï¼Œä¹Ÿå¯
+   é€šè¿‡æŒ‡ä»¤#pragma add_include_path æ·»åŠ è·¯å¾„ï¼Œé€šè¿‡æŒ‡ä»¤æ·»åŠ çš„è·¯å¾„
+   ä»…å¯è¢«ä¹‹åŽçš„å¼•ç”¨æ“ä½œæ‰€ä½¿ç”¨ã€‚
 2. #define
-   ¶¨Òå£¬¿ÉÓÃÓÚ´ÊÌæ»»¡£ÔÝ²»Ö§³Öº¯ÊýÊ½¶¨Òå¼°#»ò##²Ù×÷¡£
+   å®šä¹‰ï¼Œå¯ç”¨äºŽè¯æ›¿æ¢ã€‚æš‚ä¸æ”¯æŒå‡½æ•°å¼å®šä¹‰åŠ#æˆ–##æ“ä½œã€‚
 3. #ifdef / #ifndef / #else / #endif
-   ÅÐ¶ÏÊÇ·ñÒÑ¶¨Òå
+   åˆ¤æ–­æ˜¯å¦å·²å®šä¹‰
 4. #warning
-   Êä³ö¾¯¸æÐÅÏ¢¡£¾¯¸æÐÅÏ¢ÁÐ±íÔÚÊä³öÎÄ¼þÍ·²¿¡£¿ÉÍ¨¹ý
-   #pragma ignore_warning ¿ª¹Ø¾¯¸æÊä³ö¡£
+   è¾“å‡ºè­¦å‘Šä¿¡æ¯ã€‚è­¦å‘Šä¿¡æ¯åˆ—è¡¨åœ¨è¾“å‡ºæ–‡ä»¶å¤´éƒ¨ã€‚å¯é€šè¿‡
+   #pragma ignore_warning å¼€å…³è­¦å‘Šè¾“å‡ºã€‚
 5. #error
-   ÖÕÖ¹´¦Àí¹ý³Ì£¬Êä³ö´íÎóÐÅÏ¢¡£¿ÉÍ¨¹ý #pragma keep_processed ¿ª¹Øµ±
-   ³öÏÖ´íÎóÊ±ÊÇ·ñÁô´æÒÑ´¦ÀíÄÚÈÝ¡£
+   ç»ˆæ­¢å¤„ç†è¿‡ç¨‹ï¼Œè¾“å‡ºé”™è¯¯ä¿¡æ¯ã€‚å¯é€šè¿‡ #pragma keep_processed å¼€å…³å½“
+   å‡ºçŽ°é”™è¯¯æ—¶æ˜¯å¦ç•™å­˜å·²å¤„ç†å†…å®¹ã€‚
 6. #pragma
-   ´¦ÀíÖ¸Áî£¬Ö¸ÁîÄÚÈÝ¿É±»defineÌæ»»´¦Àí
+   å¤„ç†æŒ‡ä»¤ï¼ŒæŒ‡ä»¤å†…å®¹å¯è¢«defineæ›¿æ¢å¤„ç†
 7. #region / #endregion
-   ½øÈëÇøÓò£¬ÍË³öÇøÓò¡£¿ÉÒÔÊ¹ÎÄ¼þ¸üÎªÌõÀí¡£ÁíÓÐÒÔÏÂ¼¸¸öÌØÊâÇøÓò£º
+   è¿›å…¥åŒºåŸŸï¼Œé€€å‡ºåŒºåŸŸã€‚å¯ä»¥ä½¿æ–‡ä»¶æ›´ä¸ºæ¡ç†ã€‚å¦æœ‰ä»¥ä¸‹å‡ ä¸ªç‰¹æ®ŠåŒºåŸŸï¼š
        _REM_
-       ×¢ÊÍÇøÓò£¬¸ÃÇøÓòÄÚÎÄ±¾²»±»´¦Àí
+       æ³¨é‡ŠåŒºåŸŸï¼Œè¯¥åŒºåŸŸå†…æ–‡æœ¬ä¸è¢«å¤„ç†
        _PROTECTED_
-       ±£»¤ÇøÓò£¬¸ÃÇøÓòÄÚÈÝ½«±»ÒÆ¶¯µ½ÎÄ¼þÍ·²¿£¬Í¬Ê±²»²ÎÓëpragmaµÄ
-       exec / exec_as_output ´¦Àí
+       ä¿æŠ¤åŒºåŸŸï¼Œè¯¥åŒºåŸŸå†…å®¹å°†è¢«ç§»åŠ¨åˆ°æ–‡ä»¶å¤´éƒ¨ï¼ŒåŒæ—¶ä¸å‚ä¸Žpragmaçš„
+       exec / exec_as_output å¤„ç†
        _MACRO_
-       ¸ÃÇøÓòÄÚÎÄ±¾½ö×öºêÖ¸Áî´¦Àí£¬ÆÕÍ¨ÎÄ±¾½«²»Êä³ö
+       è¯¥åŒºåŸŸå†…æ–‡æœ¬ä»…åšå®æŒ‡ä»¤å¤„ç†ï¼Œæ™®é€šæ–‡æœ¬å°†ä¸è¾“å‡º
 8. #if / #elif
-   ½øÐÐÒ»Ð©Âß¼­ÅÐ¶Ï£¬Ö§³Ödefine()º¯ÊýÅÐ¶ÏÊÇ·ñÒÑ¶¨Òå£¬Ö§³Ö&& || !µÈ
-   Âß¼­²Ù×÷
+   è¿›è¡Œä¸€äº›é€»è¾‘åˆ¤æ–­ï¼Œæ”¯æŒdefine()å‡½æ•°åˆ¤æ–­æ˜¯å¦å·²å®šä¹‰ï¼Œæ”¯æŒ&& || !ç­‰
+   é€»è¾‘æ“ä½œ
 
-#pragma Ö¸Áî
+#pragma æŒ‡ä»¤
 
-add_include_path            Ìí¼ÓÒýÓÃÂ·¾¶
-keep_processed (on|off)     µ±³öÏÖ´íÎóÊ±£¬±£³ÖÒÑ´¦ÀíµÄÎÄ±¾
-ignore_exec_error (on|off)  ºöÂÔÖ´ÐÐÎÄ¼þ´íÎó
-ignore_warning (on|off)     ²»Êä³ö¾¯¸æÐÅÏ¢
-set_time_limit              ÉèÖÃ½Å±¾×î³¤Ö´ÐÐÊ±¼ä£¬·ÀÖ¹ÔËÐÐÍâ²¿Ö¸
-                            ÁîÊ±³öÏÖ½Å±¾³¬Ê±
-exec                        Ö´ÐÐÃüÁî¡£¿ÉÓÃ%s´úÌæÊäÈëÎÄ¼þ£¬ÎÄ¼þÄÚ
-                            ÈÝ¼°µ±Ç°ÒÑ´¦ÀíÄÚÈÝ
-exec_as_output              Ö´ÐÐÃüÁî£¬²¢½«Ö´ÐÐ½á¹û×÷ÎªÊä³öÄÚÈÝ¡£¿É
-                            ÓÃ%s´úÌæÊäÈëÎÄ¼þ£¬Èç²»Ê¹ÓÃ£¬ÔòÍ¨¹ý
-                            stdinÊäÈë£»%d´úÌæÊä³öÎÄ¼þ£¬Èç²»Ê¹ÓÃ£¬
-                            ÔòÍ¨¹ýstdoutÈ¡³ö½á¹û
-exec_to_output              Ö´ÐÐÃüÁî£¬²¢½«Ö´ÐÐ½á¹ûÌí¼Óµ½Êä³öÄÚÈÝ¡£
-dump                        ½«ÒÑ´¦ÀíµÄ²¿·ÖÄÚÈÝµ¼³öÖÁÎÄ¼þ¡£×¢ÒâÎÄ¼þ
-                            Ïà¶ÔÓÚÈë¿ÚÎÄ¼þ£¬ÇÒ²»ÂÛÖ¸ÁîÎ»ÖÃ£¬Ò»ÂÉ
-                            ´¦ÀíÍêºó½øÐÐµ¼³ö£¬ÇÒÒÔ×îºóÒ»´ÎÖ¸¶¨ÎÄ¼þÎª×¼
-charset                     Ö¸¶¨±àÂë×Ö·û¼¯£¬µÈÍ¬Êä³öContent-typeÍ·
-header                      Êä³öÌØ¶¨µÄhttpÍ·£¬µÈÍ¬phpÖÐheaderº¯Êý
+add_include_path            æ·»åŠ å¼•ç”¨è·¯å¾„
+keep_processed (on|off)     å½“å‡ºçŽ°é”™è¯¯æ—¶ï¼Œä¿æŒå·²å¤„ç†çš„æ–‡æœ¬
+ignore_exec_error (on|off)  å¿½ç•¥æ‰§è¡Œæ–‡ä»¶é”™è¯¯
+ignore_warning (on|off)     ä¸è¾“å‡ºè­¦å‘Šä¿¡æ¯
+set_time_limit              è®¾ç½®è„šæœ¬æœ€é•¿æ‰§è¡Œæ—¶é—´ï¼Œé˜²æ­¢è¿è¡Œå¤–éƒ¨æŒ‡
+                            ä»¤æ—¶å‡ºçŽ°è„šæœ¬è¶…æ—¶
+exec                        æ‰§è¡Œå‘½ä»¤ã€‚å¯ç”¨%sä»£æ›¿è¾“å…¥æ–‡ä»¶ï¼Œæ–‡ä»¶å†…
+                            å®¹åŠå½“å‰å·²å¤„ç†å†…å®¹
+exec_as_output              æ‰§è¡Œå‘½ä»¤ï¼Œå¹¶å°†æ‰§è¡Œç»“æžœä½œä¸ºè¾“å‡ºå†…å®¹ã€‚å¯
+                            ç”¨%sä»£æ›¿è¾“å…¥æ–‡ä»¶ï¼Œå¦‚ä¸ä½¿ç”¨ï¼Œåˆ™é€šè¿‡
+                            stdinè¾“å…¥ï¼›%dä»£æ›¿è¾“å‡ºæ–‡ä»¶ï¼Œå¦‚ä¸ä½¿ç”¨ï¼Œ
+                            åˆ™é€šè¿‡stdoutå–å‡ºç»“æžœ
+exec_to_output              æ‰§è¡Œå‘½ä»¤ï¼Œå¹¶å°†æ‰§è¡Œç»“æžœæ·»åŠ åˆ°è¾“å‡ºå†…å®¹ã€‚
+dump                        å°†å·²å¤„ç†çš„éƒ¨åˆ†å†…å®¹å¯¼å‡ºè‡³æ–‡ä»¶ã€‚æ³¨æ„æ–‡ä»¶
+                            ç›¸å¯¹äºŽå…¥å£æ–‡ä»¶ï¼Œä¸”ä¸è®ºæŒ‡ä»¤ä½ç½®ï¼Œä¸€å¾‹
+                            å¤„ç†å®ŒåŽè¿›è¡Œå¯¼å‡ºï¼Œä¸”ä»¥æœ€åŽä¸€æ¬¡æŒ‡å®šæ–‡ä»¶ä¸ºå‡†
+charset                     æŒ‡å®šç¼–ç å­—ç¬¦é›†ï¼Œç­‰åŒè¾“å‡ºContent-typeå¤´
+header                      è¾“å‡ºç‰¹å®šçš„httpå¤´ï¼Œç­‰åŒphpä¸­headerå‡½æ•°

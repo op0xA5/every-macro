@@ -1,26 +1,26 @@
-»ù±¾ÅäÖÃ£º
+ï»¿åŸºæœ¬é…ç½®ï¼š
 
-Ê×ÏÈÅäÖÃevery-macroµÄ¸ùÂ·¾¶£¬ÓÃ±à¼­Æ÷´ò¿ªevery-macro.php£¬½«$base_path¸ÄÎª¸ÃÍøÕ¾µÄ¸ùÄ¿Â¼¡£
+é¦–å…ˆé…ç½®every-macroçš„æ ¹è·¯å¾„ï¼Œç”¨ç¼–è¾‘å™¨æ‰“å¼€every-macro.phpï¼Œå°†$base_pathæ”¹ä¸ºè¯¥ç½‘ç«™çš„æ ¹ç›®å½•ã€‚
 
-È»ºó½«every-macro¿½±´µ½ÍøÕ¾Ä¿Â¼ÏÂ£¬½¨Òé·ÅÈëevery-macroÎÄ¼þ¼ÐÖÐ¡£
-´ËÊ±¿É·ÃÎÊevery-macro.phpÎÄ¼þ²âÊÔÊÇ·ñ³É¹¦£¬Èç³É¹¦½«ÏÔÊ¾Hello, this is every-macro¡£
-·ñÔòÇë¼ì²éÏà¹ØÂ·¾¶»òÎÄ¼þÈ¨ÏÞ£¬ÒÔ¼°$base_pathÅäÖÃ¡£
+ç„¶åŽå°†every-macroæ‹·è´åˆ°ç½‘ç«™ç›®å½•ä¸‹ï¼Œå»ºè®®æ”¾å…¥every-macroæ–‡ä»¶å¤¹ä¸­ã€‚
+æ­¤æ—¶å¯è®¿é—®every-macro.phpæ–‡ä»¶æµ‹è¯•æ˜¯å¦æˆåŠŸï¼Œå¦‚æˆåŠŸå°†æ˜¾ç¤ºHello, this is every-macroã€‚
+å¦åˆ™è¯·æ£€æŸ¥ç›¸å…³è·¯å¾„æˆ–æ–‡ä»¶æƒé™ï¼Œä»¥åŠ$base_pathé…ç½®ã€‚
 
-every-macroÐèÅäºÏHTTP·þÎñÆ÷µÄRewrite½øÐÐ£¬½«ÄúÏ£Íû¾­ÓÉevery-macro´¦ÀíµÄÎÄ¼þRewriteµ½very-macro.phpÎÄ¼þÉÏ¡£
+every-macroéœ€é…åˆHTTPæœåŠ¡å™¨çš„Rewriteè¿›è¡Œï¼Œå°†æ‚¨å¸Œæœ›ç»ç”±every-macroå¤„ç†çš„æ–‡ä»¶Rewriteåˆ°very-macro.phpæ–‡ä»¶ä¸Šã€‚
 
-Apache·þÎñÆ÷RewriteÖ¸Áî¾ÙÀý£º
+ApacheæœåŠ¡å™¨RewriteæŒ‡ä»¤ä¸¾ä¾‹ï¼š
 	RewriteEngine On
 	RewriteRule .*\.(js|css)$ /every-macro/every-macro.php
-´ËÖ¸Áî½«jsºÍcssÎÄ¼þµÄ·ÃÎÊ×ª½»/every-macro/every-macro.php´¦Àí£¬¼´every-macroµÄÖ÷Ö´ÐÐ³ÌÐò¡£
+æ­¤æŒ‡ä»¤å°†jså’Œcssæ–‡ä»¶çš„è®¿é—®è½¬äº¤/every-macro/every-macro.phpå¤„ç†ï¼Œå³every-macroçš„ä¸»æ‰§è¡Œç¨‹åºã€‚
 
-×¢ÒâRewriteÖ¸ÁîÖÐ²»ÒªÊ¹ÓÃÖØ¶¨Ïò¹¦ÄÜ£¬Ó¦±£³ÖÇëÇóURL²»±ä¡£
+æ³¨æ„RewriteæŒ‡ä»¤ä¸­ä¸è¦ä½¿ç”¨é‡å®šå‘åŠŸèƒ½ï¼Œåº”ä¿æŒè¯·æ±‚URLä¸å˜ã€‚
 
-ÆäËûÅäÖÃ£º
+å…¶ä»–é…ç½®ï¼š
 
-include-paths ÒýÓÃÂ·¾¶ÁÐ±í£º
-±à¼­include-paths.php£¬ÔÚÊý×éÖÐÌí¼ÓÒýÓÃÂ·¾¶¡£
-ÒýÓÃÂ·¾¶Èç¹ûÒÔ'/'¿ªÍ·»òÒÔÅÌ·û¿ªÍ·(windowsÆ½Ì¨)£¬±íÊ¾¾ø¶Ô¶¨Î»£¬·ñÔò±íÊ¾Ïà¶ÔÓÚincludeÃüÁîËùÔÚÎÄ¼þ¶¨Î»¡£
+include-paths å¼•ç”¨è·¯å¾„åˆ—è¡¨ï¼š
+ç¼–è¾‘include-paths.phpï¼Œåœ¨æ•°ç»„ä¸­æ·»åŠ å¼•ç”¨è·¯å¾„ã€‚
+å¼•ç”¨è·¯å¾„å¦‚æžœä»¥'/'å¼€å¤´æˆ–ä»¥ç›˜ç¬¦å¼€å¤´(windowså¹³å°)ï¼Œè¡¨ç¤ºç»å¯¹å®šä½ï¼Œå¦åˆ™è¡¨ç¤ºç›¸å¯¹äºŽincludeå‘½ä»¤æ‰€åœ¨æ–‡ä»¶å®šä½ã€‚
 
-sys-defines ÏµÍ³Ô¤¶¨ÒåÏîÄ¿£º
-±à¼­sys-defines.php£¬²Î¿¼ÎÄ¼þÖÐ¸ñÊ½ÌáÊ¾Ìí¼ÓËùÐèµÄÏîÄ¿¡£
-Í¨¹ýsys-defines¿ÉÌá¹©Ò»Ð©»·¾³²ÎÊý£¬µ«Ä¿Ç°°æ±¾½ö¿ÉÔÚ¼ÓÔØÈë¿ÚÎÄ¼þÖ®Ç°µ÷Èë£¬²»ÄÜËæincludeÒýÈëÎÄ¼þ¶ø·¢Éú±ä»¯¡£
+sys-defines ç³»ç»Ÿé¢„å®šä¹‰é¡¹ç›®ï¼š
+ç¼–è¾‘sys-defines.phpï¼Œå‚è€ƒæ–‡ä»¶ä¸­æ ¼å¼æç¤ºæ·»åŠ æ‰€éœ€çš„é¡¹ç›®ã€‚
+é€šè¿‡sys-defineså¯æä¾›ä¸€äº›çŽ¯å¢ƒå‚æ•°ï¼Œä½†ç›®å‰ç‰ˆæœ¬ä»…å¯åœ¨åŠ è½½å…¥å£æ–‡ä»¶ä¹‹å‰è°ƒå…¥ï¼Œä¸èƒ½éšincludeå¼•å…¥æ–‡ä»¶è€Œå‘ç”Ÿå˜åŒ–ã€‚
