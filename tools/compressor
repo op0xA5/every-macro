@@ -1,0 +1,54 @@
+﻿#region _MACRO_
+
+#define _USE_UGLIFYJS
+
+#region _REM_
+
+使用yuicompressor或uglifyjs对输出代码进行压缩
+by:zhujinliang
+
+开关：
+_USE_UGLIFYJS                使用uglifyjs压缩js，否则使用yuicompressor压缩
+DEBUG 或 DISABLE_COMPRESSOR  禁用压缩
+
+#endregion
+
+#define _UGLIFYJS_PATH  "uglify-js/bin/uglifyjs"
+#define _UGLIFYJS_CMD   node.exe _UGLIFYJS_PATH %s -mt
+
+#define _YUICOMPRESSOR_PATH     "yuicompressor/yuicompressor-2.4.2.jar"
+#define _YUICOMPRESSOR_CMD_JS   java -jar _YUICOMPRESSOR_PATH --type js %s
+#define _YUICOMPRESSOR_CMD_CSS  java -jar _YUICOMPRESSOR_PATH --type css %s
+
+#if !define(DEBUG) && !define(DISABLE_COMPRESSOR)
+
+	#pragma set_time_limit 60
+
+	#if __FILE_EXT == 'js'
+
+		#ifdef _USE_UGLIFYJS
+			#if (_UGLIFYJS_PATH != '') && (_UGLIFYJS_CMD != '') 
+				#pragma exec_as_output _UGLIFYJS_CMD
+			#else
+				#error need configure _UGLIFYJS_PATH and _UGLIFYJS_CMD
+			#endif
+		#else
+			#if (_YUICOMPRESSOR_PATH != '') && (_YUICOMPRESSOR_CMD_JS != '') 
+				#pragma exec_as_output _YUICOMPRESSOR_CMD_JS
+			#else
+				#error need configure _YUICOMPRESSOR_PATH and _YUICOMPRESSOR_CMD_JS
+			#endif
+		#endif
+
+	#elif __FILE_EXT == 'css'
+
+		#if (_YUICOMPRESSOR_PATH != '') && (_YUICOMPRESSOR_CMD_CSS != '') 
+			#pragma exec_as_output _YUICOMPRESSOR_CMD_CSS
+		#else
+			#error need configure _YUICOMPRESSOR_PATH and _YUICOMPRESSOR_CMD_CSS
+		#endif
+
+	#endif
+#endif
+
+#endregion
