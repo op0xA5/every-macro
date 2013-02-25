@@ -34,8 +34,7 @@ function compile($file){
 			$text = substr($text, 1);
 			$argv = preg_split('/\s+/', $text, 2);
 			$cmd = array_shift($argv);
-			if($cmd){
-				commands($cmd, rtrim($argv[0]));
+			if($cmd && !commands($cmd, rtrim($argv[0]))){
 				$output = false;
 			}
 		}else if(substr($text, 0, 3) == '//#'){

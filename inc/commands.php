@@ -129,8 +129,7 @@ function commands($cmd, $argv){
 			}
 			break;
 		default:
-			errEnd(Lang::UnknownMacroCommand . $cmd);
-			break;
+			return -1;
 	}
 }
 

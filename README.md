@@ -1,6 +1,25 @@
-﻿every-macro
+every-macro
 =
 every-macro是一个基于php，为js,css等文件提供类似C语言的宏指令功能的工具。
+
+注意
+-
+与CSS语法冲突，导致#选测器被误认为是宏指令。新版本中规则已改为“#后面为未知宏指令时，输出原文”，以尽可能减少冲突。如必须用于css文件，请注意不要在#选择器中使用以下单词：
+
+- include
+- define
+- undef
+- ifdef
+- ifndef
+- if
+- else
+- elif
+- endif
+- warning
+- error
+- pargma
+- region
+- endregion
 
 原理
 -
@@ -16,6 +35,7 @@ every-macro是一个基于php，为js,css等文件提供类似C语言的宏指�
 不足之处
 -
 1. 影响错误定位，难以定位到源代码文件及行号。或许可以与浏览器调试工具协商，在输出代码中添加定位信息以改善此问题。
+2. 与css语法冲突（见顶部）
 
 应注意的问题
 -
