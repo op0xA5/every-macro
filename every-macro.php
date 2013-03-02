@@ -10,6 +10,7 @@ $base_path = 'D:\wwwroot';
 
 $fileName = rawurldecode($_SERVER['REQUEST_URI']);
 if($tmplen = strpos($fileName, '?')) $fileName = substr($fileName, 0, $tmplen);
+$fileExt = strtolower(array_pop(explode('.', $fileName)));
 
 $currentFile = realpath($base_path.$fileName);
 if($currentFile == __FILE__) die('Hello, this is every-macro');
@@ -44,6 +45,7 @@ require('inc/compiler.php');
 require('inc/commands.php');
 require('inc/pragmacmds.php');
 require('inc/misc.php');
+require('mimetypes.php');
 
 //------- 中文编码补丁 -------
 
@@ -56,9 +58,9 @@ if(!file_exists($currentFile)){
 compile($currentFile);
 
 //--------- 输出过程 ---------
-
+header('Content-Type: '.get_mime_type($fileExt), true);
 if($pgmFlags['ext_header']) foreach($pgmFlags['ext_header'] as $value){
-	header($value);
+	header($value, true);
 }
 
 ob_start();

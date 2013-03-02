@@ -10,7 +10,7 @@ if(!isset($defines)) die();
 //$defines['FLAG'] = '';
 //等同于 #define FLAG
 
-$defines['__FILE_EXT'] = strtolower(array_pop(explode('.', $fileName)));
+$defines['__FILE_EXT'] = $fileExt;
 
 //通过QueryString传入定义项
 foreach($_GET as $key => $value){

@@ -69,7 +69,8 @@ function pragmaCmds($cmd, $argv){
 		$pgmFlags['dump'] = $argv;
 		break;
 	case 'charset':
-		$argv = "Content-type: text/plain; charset=".$argv;
+		global $fileExt;
+		$argv = 'Content-Type: '.get_mime_type($fileExt).'; charset='.$argv;
 	case 'header':
 		if(isset($pgmFlags['ext_header'])) array_push($pgmFlags['ext_header'], $argv);
 		else $pgmFlags['ext_header'] = array($argv);
