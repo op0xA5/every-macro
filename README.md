@@ -17,7 +17,7 @@ every-macro是一个基于php，为js,css等文件提供类似C语言的宏指�
 - endif
 - warning
 - error
-- pargma
+- pragma
 - region
 - endregion
 
